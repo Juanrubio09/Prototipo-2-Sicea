@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración</title>
-    <link rel="stylesheet" href="home-estilos.css"> <!-- Vincula tu archivo de estilos externo -->
-    <link rel="stylesheet" href="administracionEstilos.css"> <!-- Vincula tu archivo de estilos externo -->
+    <link rel="stylesheet" href="home.css"> <!-- Vincula tu archivo de estilos externo -->
+    <link rel="stylesheet" href="administracion.css"> <!-- Vincula tu archivo de estilos externo -->
 </head>
 <body>
+    
     <div class="container">
         <!-- Menú lateral -->
         <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="772a6c19-7b7a-d16f-03e2-1da3e4d914e0">
@@ -26,9 +27,9 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="calendario.html" rel="tooltip" title="" data-placement="right" data-original-title="Calendario">
+                    <a href="procesos.html" rel="tooltip" title="" data-placement="right" data-original-title="Calendario">
                         <i class="fa fa-calendar"></i>
-                        <p>Calendario</p>
+                        <p>Procesos</p>
                     </a>
                 </li>
                 <li class="">
@@ -46,8 +47,24 @@
             </ul>
         </div>
         <!-- Contenido principal -->
+        <div>
+            <!-- Navbar superior -->
+            <div class="navbar">
+                <div class="user-button">
+                    <div class="user-menu" id="userMenu">
+                        <button onclick="logout()">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
         <div class="content">
+            
+            
+            
             <div class="container-fluid">
+                
                 <div class="row">
                     <!-- Sección 1: Escuela -->
                     <div class="col-md-12">
@@ -106,5 +123,16 @@
             </div>
         </div>
     </div>
+
+    
+
+    <!-- JavaScript para el menú de usuario -->
+    <script>
+        
+        function logout() {
+            // Agrega aquí el código para cerrar la sesión y redirigir a la página de inicio de sesión (login.html)
+            window.location.href = "login.html";
+        }
+    </script>
 </body>
 </html>
